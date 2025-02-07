@@ -10,19 +10,21 @@
   <body>
     <!-- menu -->
     <nav class="bg-white shadow-md">
-      <div class="container mx-auto flex justify-between items-center">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 py-3"
+      >
         <img
           src="src/assets/img/logo.png"
           alt="Logo"
-          class="h-16 w-auto object-contain"
+          class="h-12 w-auto object-contain"
         />
 
         <button
           id="menu-btn"
-          class="md:hidden text-green-500 focus:outline-none mr-[50px]"
+          class="md:hidden text-green-500 focus:outline-none"
         >
           <svg
-            class="w-8 h-8 text-gray-700"
+            class="w-8 h-8"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -39,65 +41,22 @@
 
         <ul
           id="menu"
-          class="hidden md:flex space-x-6 text-green-500 font-semibold text-xl"
+          class="hidden md:flex space-x-6 text-green-500 font-semibold text-lg"
         >
-          <li>
-            <a
-              href="#"
-              class="hover:underline decoration-2 underline-offset-[20px]"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:underline decoration-2 underline-offset-[20px]"
-              >Shop</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:underline decoration-2 underline-offset-[20px]"
-              >Category</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:underline decoration-2 underline-offset-[20px]"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:underline decoration-2 underline-offset-[20px]"
-              >FAQ</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:underline decoration-2 underline-offset-[20px]"
-              >Contact</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:underline decoration-2 underline-offset-[20px]"
-              >About</a
-            >
-          </li>
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">Shop</a></li>
+          <li><a href="#" class="hover:underline">Category</a></li>
+          <li><a href="#" class="hover:underline">Blog</a></li>
+          <li><a href="#" class="hover:underline">FAQ</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+          <li><a href="#" class="hover:underline">About</a></li>
         </ul>
 
         <a
           href="#"
           class="hidden md:block bg-green-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-600"
+          >Shop Now</a
         >
-          Shop Now
-        </a>
       </div>
 
       <div id="mobile-menu" class="hidden md:hidden bg-white p-4 space-y-4">
@@ -110,55 +69,82 @@
         <a href="#" class="block text-green-500 font-semibold">About</a>
       </div>
     </nav>
-    <div class="bg-[url()]"></div>
 
     <div class="bg-white min-h-screen">
       <div
-        class="relative w-full p-6 bg-cover bg-center shadow-lg min-h-[400px]"
-        style="background-image: url('/src/assets/img/Pasted\ image.png')"
+        class="relative w-full p-6 bg-cover bg-center shadow-lg min-h-[400px] flex items-center justify-center text-center"
+        style="background-image: url('src/assets/img/Pasted\ image.png')"
       >
-        <div class="absolute bg-black bg-opacity-10"></div>
-
-        <div class="relative z-4 left-[660px] top-[80px]">
-          <h1 class="text-3xl font-bold text-black">V-DAY IS COMING</h1>
+        <div class="absolute inset-0 bg-stone-500/[71.37%]"></div>
+        <div class="relative text-white max-w-lg">
+          <h1 class="text-3xl md:text-4xl font-bold">V-DAY IS COMING</h1>
           <div
-            class="mt-4 text-left-[60px] inline-block bg-black text-white px-6 py-2 text-xl font-bold rotate-3"
+            class="mt-4 inline-block bg-black text-white px-6 py-2 text-xl font-bold rotate-4"
           >
             50% OFF
           </div>
-          <p class="mt-4 text-black text-sm">
+          <p class="mt-4 text-sm md:text-lg">
             BRIGHTEN EVERY DAY WITH BEAUTIFUL FLOWERS.
           </p>
         </div>
       </div>
 
-      <div class="container mx-auto px-4 text-center"></div>
-      <div class="relative z-4 text-center top-[30px]">
-        <h1 class="text-2xs font-bold text-black">WHAT ARE WE OFFTER ?</h1>
-        <br />
-        <p>
-          At Flower Shop , we offer fresh, high-quality flowers at the best
-          prices. <br />
-          Whether for a special occasion or just because, our beautiful
-          arrangements <br />
-          come with exclusive discounts to make gifting easy and affordable.
-          Fast delivery, <br />
-          great value—because every moment deserves flowers!
+      <div class="text-center p-6 w-[80%] mx-auto">
+        <h1 class="text-lg md:text-2xl font-bold text-black">
+          WHAT DO WE OFFER?
+        </h1>
+        <p class="mt-2 text-sm md:text-base">
+          At Flower Shop, we offer fresh, high-quality flowers at the best
+          prices. Whether for a special occasion or just because, our beautiful
+          arrangements come with exclusive discounts to make gifting easy and
+          affordable. Fast delivery, great value—because every moment deserves
+          flowers!
         </p>
+      </div>
+    </div>
+
+    <div
+      class="lg:h-[200px] md:h-full relative bg-white drop-shadow-xl rounded-lg flex flex-col md:flex-row items-center p-6 w-[90%] mx-auto mt-10"
+    >
+      <!-- Image Section -->
+      <div class="flex-shrink-0 relative -mt-[50px]">
+        <img
+          src="https://xtratheme.com/elementor/flower-shop/wp-content/uploads/sites/70/2021/09/f3.png"
+          alt="Valentine Flowers"
+          class="w-64 rounded-lg"
+        />
+      </div>
+
+      <!-- Content Section -->
+      <div class="flex-1 md:text-left px-6">
+        <h2 class="text-3xl font-semibold text-gray-900">
+          Valentine's Day Amazing Offer!
+        </h2>
+        <p class="text-gray-900 mt-2 text-xl md:text-start">
+          Valentine's Day, also called Saint Valentine's Day or the Feast of
+          Saint Valentine, is celebrated annually on February 14.
+        </p>
+      </div>
+
+      <!-- Button -->
+      <div class="mt-4 md:mt-0">
+        <a
+          href="#"
+          class="bg-green-900 text-white px-6 py-3 rounded-md shadow-md hover:bg-green-800"
+        >
+          SHOP NOW
+        </a>
       </div>
     </div>
 
     <script>
       // Mobile menu toggle
       const menuBtn = document.getElementById("menu-btn");
-      const menu = document.getElementById("menu");
       const mobileMenu = document.getElementById("mobile-menu");
 
       menuBtn.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
       });
     </script>
-
-    <!-- Content goes here -->
   </body>
 </html>
