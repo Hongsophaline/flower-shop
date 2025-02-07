@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,7 @@
     <nav class="bg-white shadow-md">
       <div class="container mx-auto flex justify-between items-center">
         <img
-          src="/src/assets/img/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjkxNC1uaW5nLTM5XzEta3pwaGh0NTYuanBn-removebg-preview.png"
+          src="src/assets/img/logo.png"
           alt="Logo"
           class="h-16 w-auto object-contain"
         />
@@ -110,17 +110,55 @@
         <a href="#" class="block text-green-500 font-semibold">About</a>
       </div>
     </nav>
+    <div class="bg-[url()]"></div>
 
-    <div class="container"></div>
+    <div class="bg-white min-h-screen">
+      <div
+        class="relative w-full p-6 bg-cover bg-center shadow-lg min-h-[400px]"
+        style="background-image: url('/src/assets/img/Pasted\ image.png')"
+      >
+        <div class="absolute bg-black bg-opacity-10"></div>
+
+        <div class="relative z-4 left-[660px] top-[80px]">
+          <h1 class="text-3xl font-bold text-black">V-DAY IS COMING</h1>
+          <div
+            class="mt-4 text-left-[60px] inline-block bg-black text-white px-6 py-2 text-xl font-bold rotate-3"
+          >
+            50% OFF
+          </div>
+          <p class="mt-4 text-black text-sm">
+            BRIGHTEN EVERY DAY WITH BEAUTIFUL FLOWERS.
+          </p>
+        </div>
+      </div>
+
+      <div class="container mx-auto px-4 text-center"></div>
+      <div class="relative z-4 text-center top-[30px]">
+        <h1 class="text-2xs font-bold text-black">WHAT ARE WE OFFTER ?</h1>
+        <br />
+        <p>
+          At Flower Shop , we offer fresh, high-quality flowers at the best
+          prices. <br />
+          Whether for a special occasion or just because, our beautiful
+          arrangements <br />
+          come with exclusive discounts to make gifting easy and affordable.
+          Fast delivery, <br />
+          great value—because every moment deserves flowers!
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- Content goes here -->
   </body>
 </html>
-<script>
-  // Mobile menu toggle
-  const menuBtn = document.getElementById("menu-btn");
-  const menu = document.getElementById("menu");
-  const mobileMenu = document.getElementById("mobile-menu");
-
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-</script>
