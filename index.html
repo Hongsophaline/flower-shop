@@ -1,11 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-gray-200">
+    <nav class="bg-white shadow-md">
+      <div class="container mx-auto flex justify-between items-center ">
+        <img
+          src="/src/assets/img/flower-petals-logo_579179-1600-removebg.png"
+          alt="Logo"
+          class="h-16 w-auto object-contain"
+        />
+
+        <button
+          id="menu-btn"
+          class="md:hidden text-green-500 focus:outline-none mr-[50px]"
+        >
+          ☰
+        </button>
+
+        <ul
+          id="menu"
+          class="hidden md:flex space-x-6 text-green-500 font-semibold text-xl"
+        >
+          <li>
+            <a
+              href="../page/About.html"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Category</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >FAQ</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >About</a
+            >
+          </li>
+        </ul>
+
+        <a
+          href="#"
+          class="hidden md:block bg-green-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-600"
+        >
+          Shop Now
+        </a>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-white p-4 space-y-4">
+        <a href="#" class="block text-green-500 font-semibold">Home</a>
+        <a href="#" class="block text-green-500 font-semibold">Shop</a>
+        <a href="#" class="block text-green-500 font-semibold">Category</a>
+        <a href="#" class="block text-green-500 font-semibold">Blog</a>
+        <a href="#" class="block text-green-500 font-semibold">FAQ</a>
+        <a href="#" class="block text-green-500 font-semibold">Contact</a>
+        <a href="#" class="block text-green-500 font-semibold">About</a>
+      </div>
+    </nav>
+    <div class="bg-[url()]"></div>
+
+    <div class="bg-white  min-h-screen">
+      <div class="relative w-full p-6 bg-cover bg-center shadow-lg min-h-[400px]" style="background-image: url('/src/assets/img/Pasted\ image.png');">
+          <div class="absolute bg-black bg-opacity-10 "></div>
+          
+          <div class="relative z-4 left-[660px] top-[80px]">
+              <h1 class="text-3xl font-bold text-black">V-DAY IS COMING</h1>
+              <div class="mt-4 text-left-[60px] inline-block bg-black text-white px-6 py-2 text-xl font-bold rotate-3">
+                  50% OFF
+              </div>
+              <p class="mt-4 text-black text-sm">BRIGHTEN EVERY DAY WITH BEAUTIFUL FLOWERS.</p>
+          </div>
+      </div>
   
-  </body>
-</html>
+      <div class="container mx-auto px-4 text-center "></div>
+      <div class="relative z-4 text-center top-[30px] ">
+        <h1 class="text-2xs font-bold text-black">WHAT ARE WE OFFTER ?</h1> <br>
+        <p>At  Flower Shop , we offer fresh, high-quality flowers at the best prices. <br>
+           Whether for a special occasion or just because, our beautiful arrangements <br>
+          come with exclusive discounts to make gifting easy and affordable. Fast delivery, <br>
+           great value—because every moment deserves flowers!</p>
+      </div>
+
+
+    </body>
+    </html>
+
+
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- Content goes here -->
+ 
