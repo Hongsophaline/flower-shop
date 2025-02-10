@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Flower Shop | Shop page</title>
+  </head>
+  <body class="">
+    <nav class="bg-white shadow-md">
+      <div class="container mx-auto flex justify-between items-center">
+        <img
+          src="../assets/img/logo.png"
+          alt="Logo"
+          class="h-16 w-auto object-cover"
+        />
+
+        <button
+          id="menu-btn"
+          class="md:hidden text-green-500 focus:outline-none mr-[50px]"
+        >
+          ☰
+        </button>
+
+        <ul
+          id="menu"
+          class="hidden md:flex space-x-6 text-green-500 font-semibold text-xl"
+        >
+          <li>
+            <a
+              href="/index.html"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Category</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >FAQ</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >About</a
+            >
+          </li>
+        </ul>
+
+        <a
+          href="#"
+          class="hidden md:block bg-green-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-600"
+        >
+          Shop Now
+        </a>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-white p-4 space-y-4">
+        <a href="#" class="block text-green-500 font-semibold">Home</a>
+        <a href="#" class="block text-green-500 font-semibold">Shop</a>
+        <a href="#" class="block text-green-500 font-semibold">Category</a>
+        <a href="#" class="block text-green-500 font-semibold">Blog</a>
+        <a href="#" class="block text-green-500 font-semibold">FAQ</a>
+        <a href="#" class="block text-green-500 font-semibold">Contact</a>
+        <a href="#" class="block text-green-500 font-semibold">About</a>
+      </div>
+    </nav>
+    <div class="flex flex-col items-center bg-gray-100 shadow-lg p-4 md:hidden">
+      <h2 class="text-2xl font-bold text-gray-900 p-4">
+        Special Valentine's Offer! ❤️
+      </h2>
+      <p class="text-gray-700 p-2 text-center">
+        Get the perfect flowers for your loved one.
+      </p>
+      <button
+        class="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-600"
+      >
+        Order Now
+      </button>
+    </div>
+    <div
+      class="hidden md:flex flex-col md:flex-row items-center bg-gray-100 rounded-2xl shadow-lg"
+    >
+      <!-- Image Section -->
+      <div class="w-full md:w-1/2">
+        <img
+          src="https://pbs.twimg.com/media/FKNfQs1XEAMMdO_?format=jpg&name=4096x4096"
+          alt="Valentine's Flowers"
+          class="w-full h-[80vh] object-cover"
+        />
+      </div>
+
+      <!-- Text Section -->
+      <div class="w-full md:w-1/2 p-6 h-[40vh]">
+        <h2 class="text-2xl font-bold text-gray-900 p-2">
+          It’s the Month of Love!
+        </h2>
+        <p class="text-gray-700 p-2">
+          The clock’s ticking! Place your Valentine’s Day order now.
+        </p>
+        <button
+          class="mt-4 ml-3 px-4 py-2 bg-black text-white rounded-lg shadow-md hover:bg-gray-800"
+        >
+          Send Flower
+        </button>
+      </div>
+    </div>
+    <div class="p-6">
+      <h1 class="md:text-3xl font-bold">Shop by Category</h1>
+    </div>
+    <div class="flex flex-row w-[97%] h-auto mx-auto p-6 gap-6">
+      <div class="w-[23.5%] overflow-hidden">
+        <img
+          class="w-full h-56 object-cover"
+          src="https://www.scottsflowersnyc.com/cdn/shop/products/TheSweetheartPackageTHB1.jpg?v=1673554711&width=533"
+          alt="Bouquet"
+        />
+        <div class="pt-4">
+          <h2 class="font-bold text-gray-800 text-2xl">
+            VALENTINE'S COLLECT -->
+          </h2>
+        </div>
+      </div>
+      <div class="w-[23.5%] overflow-hidden">
+        <img
+          class="w-full h-56 object-cover"
+          src="https://www.scottsflowersnyc.com/cdn/shop/products/TheSweetheartPackageTHB1.jpg?v=1673554711&width=533"
+          alt="Bouquet"
+        />
+        <div class="pt-4">
+          <h2 class="font-bold text-gray-800 text-2xl">
+            VALENTINE'S COLLECT -->
+          </h2>
+        </div>
+      </div>
+      <div class="w-[23.5%] overflow-hidden">
+        <img
+          class="w-full h-56 object-cover"
+          src="https://www.scottsflowersnyc.com/cdn/shop/products/TheSweetheartPackageTHB1.jpg?v=1673554711&width=533"
+          alt="Bouquet"
+        />
+        <div class="pt-4">
+          <h2 class="font-bold text-gray-800 text-2xl">
+            VALENTINE'S COLLECT -->
+          </h2>
+        </div>
+      </div>
+      <div class="w-[23.5%] overflow-hidden">
+        <img
+          class="w-full h-56 object-cover"
+          src="https://www.scottsflowersnyc.com/cdn/shop/products/TheSweetheartPackageTHB1.jpg?v=1673554711&width=533"
+          alt="Bouquet"
+        />
+        <div class="pt-4">
+          <h2 class="font-bold text-gray-800 text-2xl">
+            VALENTINE'S COLLECT -->
+          </h2>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
