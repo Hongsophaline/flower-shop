@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Flower Shop | Home page</title>
+    <link rel="icon" type="image/x-icon" href="src/assets/img/logo.png" />
   </head>
 
   <body>
@@ -44,12 +45,20 @@
           class="hidden md:flex space-x-6 text-green-500 font-semibold text-lg"
         >
           <li><a href="#" class="hover:underline">Home</a></li>
-          <li><a href="#" class="hover:underline">Shop</a></li>
-          <li><a href="#" class="hover:underline">Category</a></li>
-          <li><a href="#" class="hover:underline">Blog</a></li>
-          <li><a href="#" class="hover:underline">FAQ</a></li>
-          <li><a href="#" class="hover:underline">Contact</a></li>
-          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="src/page/Shop.html" class="hover:underline">Shop</a></li>
+          <li>
+            <a href="src/page/Category.html" class="hover:underline"
+              >Category</a
+            >
+          </li>
+          <li><a href="src/page/Blog.html" class="hover:underline">Blog</a></li>
+          <li><a href="src/page/FAQ.html" class="hover:underline">FAQ</a></li>
+          <li>
+            <a href="src/page/Contact.html" class="hover:underline">Contact</a>
+          </li>
+          <li>
+            <a href="src/page/About.html" class="hover:underline">About</a>
+          </li>
         </ul>
 
         <a
@@ -61,12 +70,28 @@
 
       <div id="mobile-menu" class="hidden md:hidden bg-white p-4 space-y-4">
         <a href="#" class="block text-green-500 font-semibold">Home</a>
-        <a href="#" class="block text-green-500 font-semibold">Shop</a>
-        <a href="#" class="block text-green-500 font-semibold">Category</a>
-        <a href="#" class="block text-green-500 font-semibold">Blog</a>
-        <a href="#" class="block text-green-500 font-semibold">FAQ</a>
-        <a href="#" class="block text-green-500 font-semibold">Contact</a>
-        <a href="#" class="block text-green-500 font-semibold">About</a>
+        <a href="src/page/Shop.html" class="block text-green-500 font-semibold"
+          >Shop</a
+        >
+        <a
+          href="src/page/Category.html"
+          class="block text-green-500 font-semibold"
+          >Category</a
+        >
+        <a href="src/page/Blog.html" class="block text-green-500 font-semibold"
+          >Blog</a
+        >
+        <a href="src/page/FAQ.html" class="block text-green-500 font-semibold"
+          >FAQ</a
+        >
+        <a
+          href="src/page/Contact.html"
+          class="block text-green-500 font-semibold"
+          >Contact</a
+        >
+        <a href="src/page/About.html" class="block text-green-500 font-semibold"
+          >About</a
+        >
       </div>
     </nav>
 
@@ -162,7 +187,7 @@
     </div>
 
     <!-- Card -->
-    <div class="flex justify-center mx-auto w-[90%] p-5 bg-black">
+    <div class="flex justify-around mx-auto w-[95%] p-5">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 xs:grid-cols-2">
         <!-- care1 -->
         <div class="max-w-xs bg-white shadow-lg rounded-2xl overflow-hidden">
@@ -304,8 +329,232 @@
         </div>
       </div>
     </div>
+    <div class="grid grid-cols-1 md:grid-cols-1 p-4 gap-4">
+      <!-- Card 1 -->
+      <div
+        class="flex flex-col md:flex-row bg-white border border-gray-200 p-4 rounded-lg w-[80%] mx-auto"
+      >
+        <div class="">
+          <h2 class="text-green-600 font-bold text-3xl">Fairy</h2>
+          <p class="text-gray-700 text-lg mt-2">
+            This elegant bouquet combines white roses and lisianthus with blush
+            pink carnations and vibrant pink tulips. The greenery and white
+            wrapping.
+          </p>
+        </div>
+        <img
+          src="src/assets/img/fl1.png"
+          alt="Fairy Bouquet"
+          class="w-full md:w-36 object-cover rounded-lg mb-4 md:mb-0 md:mr-4"
+        />
+      </div>
 
-    <!-- java script -->
+      <!-- Card 2 -->
+      <div
+        class="flex flex-col md:flex-row bg-white border border-gray-200 p-4 rounded-lg w-[80%] mx-auto"
+      >
+        <img
+          src="src/assets/img/fl2.png"
+          alt="Jeo Bouquet"
+          class="w-full md:w-36 object-cover rounded-lg mb-4 md:mb-0 md:mr-4"
+        />
+        <div class="">
+          <h2 class="text-green-600 font-bold text-3xl">Jeo</h2>
+          <p class="text-gray-700 text-lg mt-2">
+            Brighten any space with our charming spring tulip bouquet. Featuring
+            a delightful mix of orange and white tulips, accented with blue
+            thistle and lush greenery.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="flex flex-col md:flex-row bg-white border border-gray-200 p-4 rounded-lg w-[80%] mx-auto"
+      >
+        <div class="">
+          <h2 class="text-green-600 font-bold text-3xl">Duenn</h2>
+          <p class="text-gray-700 text-lg mt-2">
+            Brighten any space with our charming spring tulip bouquet. Featuring
+            a delightful mix of orange and white tulips, accented with blue
+            thistle.
+          </p>
+        </div>
+        <img
+          src="src/assets/img/fl3.png"
+          alt="Duenn Bouquet"
+          class="w-full md:w-36 object-cover rounded-lg mb-4 md:mb-0 md:mr-4"
+        />
+      </div>
+
+      <!-- Card 4 -->
+      <div
+        class="flex flex-col md:flex-row bg-white border border-gray-200 p-4 rounded-lg w-[80%] mx-auto"
+      >
+        <img
+          src="src/assets/img/fl4.png"
+          alt="Creative Florist"
+          class="w-full md:w-36 object-cover rounded-lg mb-4 md:mb-0 md:mr-4"
+        />
+        <div class="">
+          <h2 class="text-green-600 font-bold text-3xl">
+            Singapore's Creative Florist
+          </h2>
+          <p class="text-gray-700 text-lg mt-2">
+            Floristique was born in 2017 from two passions: our love for flowers
+            and our desire to bring happiness to our customers as their go-to
+            florist.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative h-[50vh] rounded-ml w-full mx-auto">
+      <img
+        class="object-cover w-full h-full"
+        src="src/assets/img/fl5.png"
+        alt=""
+      />
+
+      <button
+        class="bg-yellow-400 absolute bottom-4 left-1/2 transform -translate-x-1/2 text-black px-3 py-1 rounded-lg shadow hover:bg-yellow-500"
+      >
+        Add to cart
+      </button>
+    </div>
+    <footer class="bg-white border-t border-gray-300 p-6 w-[100%] mx-auto">
+      <div
+        class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-gray-700 text-sm"
+      >
+        <!-- Contact Section -->
+        <div class="flex flex-col items-center sm:items-start">
+          <div class="text-pink-500 text-3xl">
+            <img src="src/assets/img/logo.png" alt="" />
+          </div>
+          <p class="mt-[-40px] font-semibold text-lg mx-[50px]">Contact Us</p>
+          <div class="">
+            <div class="flex mt-2 text-3xl space-x-2">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="w-[50px] h-[50px] text-gray-600 hover:text-pink-500 transition"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zm0 1.5h8.5A4.25 4.25 0 0120.5 7.75v8.5a4.25 4.25 0 01-4.25 4.25h-8.5a4.25 4.25 0 01-4.25-4.25v-8.5A4.25 4.25 0 017.75 3.5zm8.78 3a1.22 1.22 0 100 2.44 1.22 1.22 0 000-2.44zM12 6.5a5.5 5.5 0 105.5 5.5A5.51 5.51 0 0012 6.5zm0 1.5a4 4 0 11-4 4 4 4 0 014-4z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="https://linkedin.com" class="space-x-3" target="_blank">
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-blue-600 rounded-lg mt-1"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.98 3.5a2.49 2.49 0 11.02 4.98 2.49 2.49 0 01-.02-4.98zM2.5 9h5V21h-5V9zm7 0h4.5v1.79h.06a4.94 4.94 0 014.44-2.44c4.76 0 5.64 3.13 5.64 7.2V21h-5v-6c0-1.44-.03-3.29-2-3.29-2 0-2.31 1.57-2.31 3.18V21h-5V9z"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+
+              <a href="https://facebook.com" class="space-x-3" target="_blank">
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-blue-600 rounded-lg mt-1"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 12A10 10 0 1012 22v-7h-2v-3h2V9.5a3 3 0 013-3h3v3h-2a1 1 0 00-1 1V12h3l-1 3h-2v7a10 10 0 0010-10z"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+
+              <a href="https://twitter.com" class="space-x-3" target="_blank">
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-black rounded-lg mt-1"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.54 6.46a7.09 7.09 0 01-2.03.56 3.54 3.54 0 001.55-1.96 7.08 7.08 0 01-2.24.86 3.54 3.54 0 00-6.03 3.22 10.05 10.05 0 01-7.3-3.7 3.54 3.54 0 001.1 4.72 3.52 3.52 0 01-1.6-.44v.05a3.54 3.54 0 002.83 3.47 3.5 3.5 0 01-1.6.06 3.54 3.54 0 003.3 2.46A7.1 7.1 0 013 18.1a10.02 10.02 0 005.42 1.58c6.5 0 10.06-5.39 10.06-10.06 0-.15 0-.3-.01-.45a7.18 7.18 0 001.75-1.83z"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Links Section -->
+        <div>
+          <h4 class="font-bold text-2xl sm:text-2xl md:text-3xl">
+            JUNEFLOWERS.COM
+          </h4>
+          <ul class="mt-2 space-y-2 sm:space-y-3 sm:text-lg">
+            <li><a href="#" class="hover:underline text-xl">About Us</a></li>
+            <li><a href="#" class="hover:underline">Blog</a></li>
+            <li><a href="#" class="hover:underline">Contact Us</a></li>
+            <li><a href="#" class="hover:underline">FAQ</a></li>
+            <li><a href="#" class="hover:underline">Terms and Condition</a></li>
+          </ul>
+        </div>
+
+        <!-- Shop by Flowers -->
+        <div>
+          <h4 class="font-bold text-xl sm:text-2xl md:text-3xl">
+            SHOP BY FLOWERS
+          </h4>
+          <ul class="mt-2 space-y-2 sm:space-y-3 text-base sm:text-lg">
+            <li><a href="#" class="hover:underline">Rose</a></li>
+            <li><a href="#" class="hover:underline">Tulips</a></li>
+            <li><a href="#" class="hover:underline">Sunflowers</a></li>
+            <li><a href="#" class="hover:underline">Peonies</a></li>
+            <li><a href="#" class="hover:underline">Lily</a></li>
+          </ul>
+        </div>
+
+        <!-- Shop by Occasion -->
+        <div>
+          <h4 class="font-bold text-xl sm:text-2xl md:text-3xl">
+            SHOP BY OCCASION
+          </h4>
+          <ul class="mt-2 space-y-2 sm:space-y-3 text-base sm:text-lg">
+            <li><a href="#" class="hover:underline">Anniversary</a></li>
+            <li><a href="#" class="hover:underline">Birthday</a></li>
+            <li>
+              <a href="#" class="hover:underline">Valentine's Day Flower</a>
+            </li>
+            <li><a href="#" class="hover:underline">Mother's Day</a></li>
+            <li><a href="#" class="hover:underline">Father's Day</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center text-gray-600 mt-6 border-t pt-3 text-lg">
+        <a href="#" class="hover:underline">&copy; Privacy Policy</a>
+      </div>
+    </footer>
+
     <script>
       // Mobile menu toggle
       const menuBtn = document.getElementById("menu-btn");
