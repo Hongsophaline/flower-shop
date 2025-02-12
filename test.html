@@ -3,109 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
+    <title>Responsive Contact Section</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/src/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
-  <body class="bg-gray-200">
-    <nav class="bg-white shadow-md">
-      <div class="container mx-auto flex justify-between items-center">
-        <img
-          src="../assets/img/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjkxNC1uaW5nLTM5XzEta3pwaGh0NTYuanBn-removebg-preview.png"
-          alt="Logo"
-          class="h-16 w-auto object-contain"
-        />
-
-        <button
-          id="menu-btn"
-          class="md:hidden text-green-500 focus:outline-none mr-[50px]"
-        >
-          ☰
-        </button>
-
-        <ul
-          id="menu"
-          class="hidden md:flex space-x-6 text-green-500 font-semibold text-xl"
-        >
-          <li>
-            <a
-              href="../page/About.html"
-              class="hover:underline decoration-2 underline-offset-[20px]"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:underline decoration-2 underline-offset-[20px]"
-              >Shop</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:underline decoration-2 underline-offset-[20px]"
-              >Category</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:underline decoration-2 underline-offset-[20px]"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:underline decoration-2 underline-offset-[20px]"
-              >FAQ</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:underline decoration-2 underline-offset-[20px]"
-              >Contact</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:underline decoration-2 underline-offset-[20px]"
-              >About</a
-            >
-          </li>
-        </ul>
-
-        <a
-          href="#"
-          class="hidden md:block bg-green-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-600"
-        >
-          Shop Now
-        </a>
-      </div>
-
-      <div id="mobile-menu" class="hidden md:hidden bg-white p-4 space-y-4">
-        <a href="#" class="block text-green-500 font-semibold">Home</a>
-        <a href="#" class="block text-green-500 font-semibold">Shop</a>
-        <a href="#" class="block text-green-500 font-semibold">Category</a>
-        <a href="#" class="block text-green-500 font-semibold">Blog</a>
-        <a href="#" class="block text-green-500 font-semibold">FAQ</a>
-        <a href="#" class="block text-green-500 font-semibold">Contact</a>
-        <a href="#" class="block text-green-500 font-semibold">About</a>
-      </div>
-    </nav>
-    <div class="sm:bg-contain md:bg-cover lg:bg-fixed bg-center bg-image">
-      <h1 class="text">Contact Us Here!!</h1>
-    </div>
+  <body class="bg-gray-100 p-8">
     <div
-      class="max-w-4xl mx-auto mt-[-120px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col lg:flex-row"
+      class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col lg:flex-row"
     >
       <!-- Contact Information Section -->
-      <div class="w-full lg:w-1/2 bg-red-100 p-8">
-        <h2 class="text-2xl font-bold text-gray-800 mb-6 mt-5">Get in touch</h2>
-        <p class="text-2xl font-bold text-gray-800 mb-6 mt-5"></p>
+      <div class="w-full lg:w-1/2 bg-indigo-100 p-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Get in touch</h2>
         <ul class="space-y-4 text-gray-700">
           <li class="flex items-center space-x-4">
             <svg
@@ -244,39 +155,12 @@
           </div>
           <button
             type="submit"
-            class="w-full bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 focus:ring-4 focus:ring-green-300"
+            class="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 focus:ring-4 focus:ring-green-300"
           >
             Send
           </button>
         </form>
       </div>
     </div>
-
-    <div class="flex justify-center mt-[60px] rems-center min-h-screen">
-      <div
-        class="w-[1422px] h-96 border-2 border-gray-400 rounded-lg overflow-hidden shadow-lg"
-      >
-        <iframe
-          class="w-full h-full"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6763.365195469518!2d104.85467468399743!3d11.566217435117254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1skm!2skh!4v1739156172096!5m2!1skm!2skh"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
-      </div>
-    </div>
   </body>
-  <script>
-    // Mobile menu toggle
-    const menuBtn = document.getElementById("menu-btn");
-    const menu = document.getElementById("menu");
-    const mobileMenu = document.getElementById("mobile-menu");
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  </script>
 </html>
