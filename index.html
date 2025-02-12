@@ -11,87 +11,91 @@
   <body>
     <!-- menu -->
     <nav class="bg-white shadow-md">
-      <div
-        class="container mx-auto flex justify-between items-center px-4 py-3"
-      >
+      <div class="container mx-auto flex justify-between items-center">
         <img
           src="src/assets/img/logo.png"
           alt="Logo"
-          class="h-12 w-auto object-contain"
+          class="h-16 w-auto object-cover"
         />
 
         <button
           id="menu-btn"
-          class="md:hidden text-green-500 focus:outline-none"
+          class="md:hidden text-green-500 focus:outline-none mr-[50px]"
         >
-          <svg
-            class="w-8 h-8"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          </svg>
+          ☰
         </button>
 
         <ul
           id="menu"
-          class="hidden md:flex space-x-6 text-green-500 font-semibold text-lg"
+          class="hidden md:flex space-x-6 text-green-500 font-semibold text-xl"
         >
-          <li><a href="#" class="hover:underline">Home</a></li>
-          <li><a href="src/page/Shop.html" class="hover:underline">Shop</a></li>
           <li>
-            <a href="src/page/Category.html" class="hover:underline"
+            <a
+              href="/index.html"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="src/page/Shop.html"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
               >Category</a
             >
           </li>
-          <li><a href="src/page/Blog.html" class="hover:underline">Blog</a></li>
-          <li><a href="src/page/FAQ.html" class="hover:underline">FAQ</a></li>
           <li>
-            <a href="src/page/Contact.html" class="hover:underline">Contact</a>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Blog</a
+            >
           </li>
           <li>
-            <a href="src/page/About.html" class="hover:underline">About</a>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >FAQ</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >About</a
+            >
           </li>
         </ul>
 
         <a
           href="#"
           class="hidden md:block bg-green-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-600"
-          >Shop Now</a
         >
+          Shop Now
+        </a>
       </div>
 
       <div id="mobile-menu" class="hidden md:hidden bg-white p-4 space-y-4">
         <a href="#" class="block text-green-500 font-semibold">Home</a>
-        <a href="src/page/Shop.html" class="block text-green-500 font-semibold"
-          >Shop</a
-        >
-        <a
-          href="src/page/Category.html"
-          class="block text-green-500 font-semibold"
-          >Category</a
-        >
-        <a href="src/page/Blog.html" class="block text-green-500 font-semibold"
-          >Blog</a
-        >
-        <a href="src/page/FAQ.html" class="block text-green-500 font-semibold"
-          >FAQ</a
-        >
-        <a
-          href="src/page/Contact.html"
-          class="block text-green-500 font-semibold"
-          >Contact</a
-        >
-        <a href="src/page/About.html" class="block text-green-500 font-semibold"
-          >About</a
-        >
+        <a href="#" class="block text-green-500 font-semibold">Shop</a>
+        <a href="#" class="block text-green-500 font-semibold">Category</a>
+        <a href="#" class="block text-green-500 font-semibold">Blog</a>
+        <a href="#" class="block text-green-500 font-semibold">FAQ</a>
+        <a href="#" class="block text-green-500 font-semibold">Contact</a>
+        <a href="#" class="block text-green-500 font-semibold">About</a>
       </div>
     </nav>
 
