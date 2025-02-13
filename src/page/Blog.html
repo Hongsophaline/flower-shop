@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Flower Shop | Home page</title>
+    <link rel="icon" type="image/x-icon" href="src/assets/img/logo.png" />
+  </head>
+
+  <body>
+    <!-- menu -->
+    <nav class="bg-white shadow-md">
+      <div class="container mx-auto flex justify-between items-center">
+        <img
+          src="../assets/img/logo.png"
+          alt="Logo"
+          class="h-16 w-auto object-cover"
+        />
+
+        <button
+          id="menu-btn"
+          class="md:hidden text-green-500 focus:outline-none mr-[50px]"
+        >
+          ☰
+        </button>
+
+        <ul
+          id="menu"
+          class="hidden md:flex space-x-6 text-rose-400 font-semibold text-xl"
+        >
+          <li>
+            <a
+              href="/index.html"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="src/page/Shop.html"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Category</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >FAQ</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >About</a
+            >
+          </li>
+        </ul>
+
+        <a
+          href="#"
+          class="hidden md:block bg-rose-400 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-600"
+        >
+          Shop Now
+        </a>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-white p-4 space-y-4">
+        <a href="#" class="block text-green-500 font-semibold">Home</a>
+        <a href="#" class="block text-green-500 font-semibold">Shop</a>
+        <a href="#" class="block text-green-500 font-semibold">Category</a>
+        <a href="#" class="block text-green-500 font-semibold">Blog</a>
+        <a href="#" class="block text-green-500 font-semibold">FAQ</a>
+        <a href="#" class="block text-green-500 font-semibold">Contact</a>
+        <a href="#" class="block text-green-500 font-semibold">About</a>
+      </div>
+    </nav>
+
+    <div class="bg-white min-h-screen">
+      <div
+        class="relative w-full p-6 bg-cover bg-center shadow-lg min-h-[80vh] flex items-center justify-center text-center"
+        style="background-image: url('../assets/img/p-blog.png')"
+      >
+        <div class="absolute inset-0 bg-stone-1000/[71.37%]"></div>
+        <div class="relative text-white max-w-lg">
+          <h1 class="font-bold text-black text-black text-6xl">Blog</h1>
+        </div>
+      </div>
+      <div
+        class="w-[100%] h-10 border-2 border-solid bg-white-200 m-6 mx-auto p-2"
+      >
+        <h1 class="text-center font-semibold">Our Blog</h1>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto p-4">
+      <div class="flex border rounded-lg shadow-lg overflow-hidden w-[100%]">
+        <!-- Text Content -->
+        <div class="w-2/3 p-6 bg-white">
+          <h2 class="text-lg font-bold text-purple-700">
+            Last-Minute Mother's Day Flower Delivery in Sydney
+          </h2>
+          <p class="text-gray-700 mt-2 text-sm">
+            Introduction  Mother's Day is a special occasion <br />
+            that reminds us to celebrate the extraordinary <br />
+            women who have shaped our lives with their love, <br />
+            guidance, and unwavering support. As a floral...
+          </p>
+          <button
+            class="mt-4 bg-yellow-400 text-black font-semibold px-4 py-2 rounded-lg shadow hover:bg-yellow-500"
+          >
+            Read more
+          </button>
+        </div>
+        <!-- Image Section -->
+        <div
+          class="w-1/3 bg-cover bg-center"
+          style="background-image: url('../assets/img/ca1.png')"
+        ></div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto p-4">
+      <div class="flex border rounded-lg shadow-lg overflow-hidden w-[100%]">
+        <!-- Image Section -->
+        <div
+          class="w-1/3 bg-cover bg-center"
+          style="background-image: url('../assets/img/ca2.png')"
+        ></div>
+        <!-- Text Content -->
+        <div class="w-2/3 p-6 bg-white">
+          <h2 class="text-lg font-bold text-purple-700">
+            Spring Flower Arrangement Ideas
+          </h2>
+          <p class="text-gray-700 mt-2 text-sm">
+            Spring has arrived, and with it comes the <br />
+            opportunity to freshen up your home with <br />
+            beautiful spring blooms. The bright colors and <br />
+            fresh scents of early spring flowers in Ireland can <br />
+            bring life and energy into your space, making your <br />
+            home feel refreshed and renewed. 
+          </p>
+          <button
+            class="mt-4 bg-yellow-400 text-black font-semibold px-4 py-2 rounded-lg shadow hover:bg-yellow-500"
+          >
+            Read more
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto p-4">
+      <div class="flex border rounded-lg shadow-lg overflow-hidden w-[100%]">
+        <!-- Text Content -->
+        <div class="w-2/3 p-6 bg-white">
+          <h2 class="text-lg font-bold text-purple-700">
+            Elegant Decorative Flowers For Your Easter Celebration
+          </h2>
+          <p class="text-gray-700 mt-2 text-sm">
+            Easter is almost here! For some, it’s a time of <br />
+            religious reflection, for others, it’s a time to spend <br />
+            with family or if you ask little ones it’s all about...
+          </p>
+          <button
+            class="mt-4 bg-yellow-400 text-black font-semibold px-4 py-2 rounded-lg shadow hover:bg-yellow-500"
+          >
+            Read more
+          </button>
+        </div>
+        <!-- Image Section -->
+        <div
+          class="w-1/3 bg-cover bg-center"
+          style="background-image: url('../assets/img/ca3.png')"
+        ></div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto p-4">
+      <div class="flex border rounded-lg shadow-lg overflow-hidden w-[100%]">
+        <!-- Image Section -->
+        <div
+          class="w-1/3 bg-cover bg-center"
+          style="background-image: url('../assets/img/ca4.png')"
+        ></div>
+        <!-- Text Content -->
+        <div class="w-2/3 p-6 bg-white">
+          <h2 class="text-lg font-bold text-purple-700">
+            Make Mother’s Day Special with Rose&Co
+          </h2>
+          <p class="text-gray-700 mt-2 text-sm">
+            The relationship between a mother and child <br />
+            outranks every other relationship. It is truly <br />
+            priceless due to her countless acts of love, <br />
+            dedication, and devotion to her family. To make...
+          </p>
+          <button
+            class="mt-4 bg-yellow-400 text-black font-semibold px-4 py-2 rounded-lg shadow hover:bg-yellow-500"
+          >
+            Read more
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto p-4">
+      <div class="flex border rounded-lg shadow-lg overflow-hidden w-[100%]">
+        <!-- Text Content -->
+        <div class="w-2/3 p-6 bg-white">
+          <h2 class="text-lg font-bold text-purple-700">
+            5 Interesting Facts about Tulips
+          </h2>
+          <p class="text-gray-700 mt-2 text-sm">
+            Tulips are one of the most beautiful & most <br />
+            popular flowers in the world. The tulip is one of <br />
+            the most iconic spring blooms, spotted in blossom <br />
+            beds, gardens, fields,...
+          </p>
+          <button
+            class="mt-4 bg-yellow-400 text-black font-semibold px-4 py-2 rounded-lg shadow hover:bg-yellow-500"
+          >
+            Read more
+          </button>
+        </div>
+        <!-- Image Section -->
+        <div
+          class="w-1/3 bg-cover bg-center"
+          style="background-image: url('../assets/img/ca5.png')"
+        ></div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto p-4">
+      <div class="flex border rounded-lg shadow-lg overflow-hidden w-[100%]">
+        <!-- Image Section -->
+        <div
+          class="w-1/3 bg-cover bg-center"
+          style="background-image: url('../assets/img/ca6.png')"
+        ></div>
+        <!-- Text Content -->
+        <div class="w-2/3 p-6 bg-white">
+          <h2 class="text-lg font-bold text-purple-700">
+            How to Choose Right Flowers For Any Occasion
+          </h2>
+          <p class="text-gray-700 mt-2 text-sm">
+            When there’s a special occasion happening <br />
+            around the corner one thing that always comes <br />
+            to mind is what to gift or how to find that perfect <br />
+            present for your friends...
+          </p>
+          <button
+            class="mt-4 bg-yellow-400 text-black font-semibold px-4 py-2 rounded-lg shadow hover:bg-yellow-500"
+          >
+            Read more
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto p-4">
+      <div class="flex border rounded-lg shadow-lg overflow-hidden w-[100%]">
+        <!-- Text Content -->
+        <div class="w-2/3 p-6 bg-white">
+          <h2 class="text-lg font-bold text-purple-700">
+            5 Reasons Why Flowers Are an Ideal Gift For Any Event
+          </h2>
+          <p class="text-gray-700 mt-2 text-sm">
+            Flowers are the gift from nature. They attract <br />
+            everyone with their beauty and fragrance. You <br />
+            can never go wrong withan amazing bouquet of <br />
+            flowers. No matter what the occasion is,...
+          </p>
+          <button
+            class="mt-4 bg-yellow-400 text-black font-semibold px-4 py-2 rounded-lg shadow hover:bg-yellow-500"
+          >
+            Read more
+          </button>
+        </div>
+        <!-- Image Section -->
+        <div
+          class="w-1/3 bg-cover bg-center"
+          style="background-image: url('../assets/img/ca7.png')"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
