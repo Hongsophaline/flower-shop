@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <body class="bg-gray-200">
+    <nav class="bg-white shadow-md">
+      <div class="container mx-auto flex justify-between items-center">
+        <img
+          src="/src/assets/img/logo.png"
+          alt="Logo"
+          class="h-16 w-auto object-cover"
+        />
+
+        <button
+          id="menu-btn"
+          class="md:hidden text-green-500 focus:outline-none mr-[50px]"
+        >
+          ☰
+        </button>
+
+        <ul
+          id="menu"
+          class="hidden md:flex space-x-6 text-rose-400 font-semibold text-xl"
+        >
+          <li>
+            <a
+              href="/index.html"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Category</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >FAQ</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline decoration-2 underline-offset-[20px]"
+              >About</a
+            >
+          </li>
+        </ul>
+
+        <a
+          href="#"
+          class="hidden md:block bg-yellow-400 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-yellow-500"
+        >
+          Shop Now
+        </a>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-white p-4 space-y-4">
+        <a href="#" class="block text-green-500 font-semibold">Home</a>
+        <a href="#" class="block text-green-500 font-semibold">Shop</a>
+        <a href="#" class="block text-green-500 font-semibold">Category</a>
+        <a href="#" class="block text-green-500 font-semibold">Blog</a>
+        <a href="#" class="block text-green-500 font-semibold">FAQ</a>
+        <a href="#" class="block text-green-500 font-semibold">Contact</a>
+        <a href="#" class="block text-green-500 font-semibold">About</a>
+      </div>
+    </nav>
+    <section
+      class="relative w-full h-screen bg-cover bg-center sm:bg-contain md:bg-cover lg:bg-fixed bg-center bg-image"
+      style="background-image: url('/src/assets/img/rosebg.png')"
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-center px-4"
+      >
+        <h1 class="text-5xl md:text-6xl font-bold text-white uppercase">
+          Fleur-Soul
+        </h1>
+        <p class="text-lg md:text-xl text-yellow-400 mt-2">
+          Connects Flowers With Soulful Stories.
+        </p>
+      </div>
+    </section>
+
+    <section class="px-6 md:px-16 py-12 bg-white text-center">
+      <p class="text-lg md:text-xl text-gray-700 font-medium leading-relaxed">
+        Hello, we’re Interflora, a network of local artisan florists (and their
+        support crew!) crafting beautiful blooms and delivering gorgeous gifts
+        across the UK and the world.
+      </p>
+      <p
+        class="mt-6 text-lg md:text-xl text-gray-700 font-medium leading-relaxed"
+      >
+        We’re experts with a century of experience not just in blooms, but
+        emotions – creating those special moments of connection that bring
+        people together.
+      </p>
+    </section>
+    <section class="px-6 md:px-16 py-12 bg-gray-100 text-center">
+      <h2 class="text-3xl font-bold text-gray-900">
+        How Interflora <span class="text-pink-500">Works</span>
+      </h2>
+      <div
+        class="mt-8 justify-items-center grid grid-cols-1 md:grid-cols-3 gap-4"
+      >
+        <div class="bg-white w-[320px] h-[400px] rounded-lg shadow-md p-6">
+          <img
+            src="/src/assets/img/img-first-card.png"
+            alt="Bouquets"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <h3 class="text-xl font-semibold mt-4">Our Bouquets Are Bespoke</h3>
+          <p class="text-gray-600 mt-2">
+            Each one is made by hand, using the freshest flowers that suit the
+            person and occasion.
+          </p>
+        </div>
+        <div class="bg-white w-[320px] h-[400px] rounded-lg shadow-md p-6">
+          <img
+            src="/src/assets/img/img-sec-card.png"
+            alt="Meaningful Flowers"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <h3 class="text-xl font-semibold mt-4">
+            These Flowers Are Made to Mean More
+          </h3>
+          <p class="text-gray-600 mt-2">
+            Our florists pay close attention to the occasion, person and message
+            – so the flowers are meaningful as well as beautiful.
+          </p>
+        </div>
+        <div class="bg-white w-[320px] h-[400px] rounded-lg shadow-md p-6">
+          <img
+            src="/src/assets/img/img-third-card.png"
+            alt="Local Florists"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <h3 class="text-xl font-semibold mt-4">
+            We Work with Local Florists
+          </h3>
+          <p class="text-gray-600 mt-2">
+            All our bouquets are handcrafted and delivered by skilled florists
+            on the high street.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById("menu-btn");
+  const menu = document.getElementById("menu");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
