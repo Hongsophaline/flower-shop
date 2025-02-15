@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <title>Flower Shop | Home page</title>
-    <link rel="icon" type="image/x-icon" href="src/assets/img/logo.png" />
+    <title>Blog | page</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo.png" />
   </head>
 
   <body>
@@ -21,7 +21,7 @@
 
         <button
           id="menu-btn"
-          class="md:hidden text-green-500 focus:outline-none mr-[50px]"
+          class="md:hidden text-rose-400 focus:outline-none mr-[50px]"
         >
           ☰
         </button>
@@ -32,21 +32,21 @@
         >
           <li>
             <a
-              href="/index.html"
+              href="../../index.html"
               class="hover:underline decoration-2 underline-offset-[20px]"
               >Home</a
             >
           </li>
           <li>
             <a
-              href="src/page/Shop.html"
+              href="Shop.html"
               class="hover:underline decoration-2 underline-offset-[20px]"
               >Shop</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="Category.html"
               class="hover:underline decoration-2 underline-offset-[20px]"
               >Category</a
             >
@@ -60,21 +60,21 @@
           </li>
           <li>
             <a
-              href="#"
+              href="FAQ.html"
               class="hover:underline decoration-2 underline-offset-[20px]"
               >FAQ</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="Contact.html"
               class="hover:underline decoration-2 underline-offset-[20px]"
               >Contact</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="About.html"
               class="hover:underline decoration-2 underline-offset-[20px]"
               >About</a
             >
@@ -82,7 +82,7 @@
         </ul>
 
         <a
-          href="#"
+          href="Shop.html"
           class="hidden md:block bg-rose-400 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-600"
         >
           Shop Now
@@ -90,16 +90,23 @@
       </div>
 
       <div id="mobile-menu" class="hidden md:hidden bg-white p-4 space-y-4">
-        <a href="#" class="block text-green-500 font-semibold">Home</a>
+        <a href="../../index.html" class="block text-green-500 font-semibold"
+          >Home</a
+        >
         <a href="#" class="block text-green-500 font-semibold">Shop</a>
-        <a href="#" class="block text-green-500 font-semibold">Category</a>
+        <a href="Category.html" class="block text-green-500 font-semibold"
+          >Category</a
+        >
         <a href="#" class="block text-green-500 font-semibold">Blog</a>
-        <a href="#" class="block text-green-500 font-semibold">FAQ</a>
-        <a href="#" class="block text-green-500 font-semibold">Contact</a>
-        <a href="#" class="block text-green-500 font-semibold">About</a>
+        <a href="FAQ.html" class="block text-green-500 font-semibold">FAQ</a>
+        <a href="Contact.html" class="block text-green-500 font-semibold"
+          >Contact</a
+        >
+        <a href="About.html" class="block text-green-500 font-semibold"
+          >About</a
+        >
       </div>
     </nav>
-
     <div class="bg-white min-h-screen">
       <div
         class="relative w-full p-6 bg-cover bg-center shadow-lg min-h-[80vh] flex items-center justify-center text-center"
@@ -306,11 +313,7 @@
         ></div>
       </div>
     </div>
-    <title>Blog page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" type="image/x-icon" href="../assets/img/logo.png" />
-  </head>
-  <body>
+
     <div>
       <div class="w-[100%] h-10 bg-gray-200 m-6 mx-auto p-2 shadow-lg">
         <h1 class="text-center">Top 3 Bouquet Trends for 2025 Weddings</h1>
@@ -608,7 +611,8 @@
             <li><a href="#" class="hover:underline">Father's Day</a></li>
           </ul>
         </div>
-      </div>ss="bg-white min-h-screen">
+      </div>
+      ss="bg-white min-h-screen">
       <div
         class="relative w-full p-6 bg-cover bg-center shadow-lg min-h-[80vh] flex items-center justify-center text-center"
         style="background-image: url('../assets/img/p-blog.png')"
@@ -623,10 +627,20 @@
       >
         <h1 class="text-center font-semibold">Our Blog</h1>
       </div>
-    </div>
+
       <div class="text-center text-gray-600 mt-6 border-t pt-3 text-lg">
         <a href="#" class="hover:underline">&copy; Privacy Policy</a>
       </div>
     </footer>
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
