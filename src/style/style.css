@@ -3,7 +3,7 @@ body {
 }
 
 .bg-image {
-  background-image: url("/src/assets/img/tulipbg-img.jpg");
+  background-image: url("../assets/img/tulipbg-img.jpg");
   height: 80vh; /* Full-screen height */
   background-size: cover;
   background-position: center;
