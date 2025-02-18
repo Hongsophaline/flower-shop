@@ -32,13 +32,19 @@ This project aims to provide a seamless online shopping experience, ensuring eas
 ### 📥 Clone the Repository
 
 ```sh
-git clone https://github.com/your-username/flower-shop.git
+git clone https://github.com/Hongsophaline/flower-shop.git
 ```
 
 ### 📂 Navigate to the Project Folder
 
 ```sh
 cd flower-shop
+```
+
+### 📔 Open Code
+
+```sh
+code .
 ```
 
 ### 🌍 Open in Browser
