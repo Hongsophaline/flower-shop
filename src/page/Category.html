@@ -725,5 +725,15 @@
         <a href="#" class="hover:underline">&copy; Privacy Policy</a>
       </div>
     </footer>
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
